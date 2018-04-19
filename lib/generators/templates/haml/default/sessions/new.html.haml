@@ -21,8 +21,10 @@
               = f.label :password
             - if devise_mapping.rememberable?
               %p
-                = f.check_box :remember_me
-                = f.label :remember_me
+                %label
+                  = f.check_box :remember_me
+                  %span
+                    = t(:remember_me)
           .form-actions.center
             = f.button :submit, class: "btn waves-effect" do
               = t(:log_in)
