@@ -17,7 +17,8 @@
                 value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email)
               = f.label :email
           .form-actions.center
-            = f.button :submit, "Resend Confirmation Instructions", class: "btn wave-effects"
+            = f.button :submit, class: "btn wave-effects" do
+              = t(:resend_confirmation_instructions)
       .card-action
         .devise-links
           = render "devise/shared/links"

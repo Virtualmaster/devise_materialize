@@ -35,6 +35,7 @@
               %span.hint-text
                 we need your current password to confirm your changes
           .form-actions.center
-            = f.button :submit, "Update", class: "btn waves-effect"
+            = f.button :submit, class: "btn waves-effect" do
+              = t(:update)
       .card-action.center
         = render "devise/shared/links"

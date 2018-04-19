@@ -16,8 +16,8 @@
               = f.email_field :email, autofocus: true, required: true
               = f.label :email
           .form-actions.center
-            = f.button :submit, "Send Me Reset Instructions",
-              class: "btn waves-effect"
+            = f.button :submit, class: "btn waves-effect" do
+              = t(:send_me_reset_instructions)
       .card-action
         .devise-links
           = render "devise/shared/links"

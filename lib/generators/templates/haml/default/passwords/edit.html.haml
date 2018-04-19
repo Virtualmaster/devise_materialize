@@ -26,7 +26,8 @@
                 autocomplete: false
               = f.label :password_confirmation
           .form-actions.center
-            = f.button :submit, "Change my Password", class: "btn waves-effect"
+            = f.button :submit, class: "btn waves-effect" do
+              = t(:change_my_password)
       .card-action
         .devise-links
           = render "devise/shared/links"

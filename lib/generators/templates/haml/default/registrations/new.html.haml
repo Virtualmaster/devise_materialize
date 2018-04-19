@@ -28,7 +28,8 @@
                 required: true
               = f.label :password_confirmation
           .form-actions.center
-            = f.button :submit, "Sign Up", class: "btn waves-effect"
+            = f.button :submit, class: "btn waves-effect" do
+              = t(:sign_up)
       .card-action
         .devise-links
           = render "devise/shared/links"
