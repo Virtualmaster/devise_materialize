@@ -20,7 +20,7 @@
               = f.password_field :password, required: true, autocomplete: "off"
               = f.label :password
             - if devise_mapping.rememberable?
-              %p
+              %p.checkbox-container.col.s12
                 %label
                   = f.check_box :remember_me
                   %span
